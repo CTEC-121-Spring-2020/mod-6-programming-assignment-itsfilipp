@@ -2,13 +2,17 @@
 #   Programming Assignment 10
 #     Prob-3.py
 
-# <YOUR NAME>
+# Filipp Kopytyuk
 
 def main():
-    # your code here
+    numbersSum = 0
+    x = float(input("Enter a number (negative to quit) >> "))
 
-    # do not change the while loop definition below
     while True:
-        # your code here
-
+        print(x)
+        if x <= 0:
+            break
+        numbersSum = numbersSum + x
+        x = float(input("Enter a number (negative to quit) >> "))
+    print("\nThe sum of the numbers is", numbersSum)
 main()    
